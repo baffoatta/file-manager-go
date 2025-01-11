@@ -12,8 +12,9 @@ type FileInfo struct {
 	Name     string    // The name of the file (e.g., "document.txt").
 	Size     int64     // The size of the file in bytes.
 	Mode     os.FileMode // The file's permissions and mode (e.g., read/write).
-	ModeTime time.Time // The last time the file's mode was changed.
+	ModifiedAt  time.Time // The last time the file's mode was changed.
 	IsDir    bool      // A boolean indicating if the file is a directory (true) or not (false).
+	
 }
 
 // FileOperation struct represents an operation that can be performed on a file.

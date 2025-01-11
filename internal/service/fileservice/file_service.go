@@ -58,7 +58,7 @@ func (s *FileService) List(path string) ([]models.FileInfo, error) {
             Name:    info.Name(),    // File name
             Size:    info.Size(),    // File size
             Mode:    info.Mode(),    // File mode (permissions)
-            ModTime: info.ModTime(), // Last modification time
+            ModifiedAt: info.ModTime(), // Last modification time
             IsDir:   info.IsDir(),   // Whether the entry is a directory
         })
     }
